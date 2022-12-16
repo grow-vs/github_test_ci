@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "96179086080",
+    "project_id": "githubtestci",
+    "storage_bucket": "githubtestci.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:96179086080:android:c748f41db7b58e872ac9e5",
+        "android_client_info": {
+          "package_name": "com.grow.githubtestci"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "96179086080-frqcitv797u9mf6j9rok966vjtj7k06k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCx4ibj-V8In4ZiDvgbtwhONSQ89wp2IhE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "96179086080-frqcitv797u9mf6j9rok966vjtj7k06k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">GithubTestCI</string>
+    <string name="enter_text">Enter Text</string>
+    <string name="show_dialog_message">Show Dialog Message</string>
+    <string name="show_text">Show Text</string>
+    <string name="close">Close</string>
 </resources>

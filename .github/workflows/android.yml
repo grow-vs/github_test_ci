@@ -22,6 +22,7 @@ jobs:
 
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
+
     - name: Build with Gradle
       run: ./gradlew build
 
@@ -29,10 +30,20 @@ jobs:
       if: always()
       run: ./gradlew assembleDebug
 
-    - name: Upload AAR files
+    - name: Upload apk file to Firebase App Distributor
       if: always()
-      uses: actions/upload-artifact@v2
+      uses: wzieba/Firebase-Distribution-Github-Action@v1
       with:
-          name: artifacts.zip
-          path: |
-            app/build/outputs/apk/debug/app-debug.apk
+        appId: '1:96179086080:android:c748f41db7b58e872ac9e5'
+        token: '1//0gbOk7p8GMblnCgYIARAAGBASNwF-L9IraZvCWO-aluEx8LGmhOcFaTimINx7f775Tzlft8V7XfNNBu8V5QpePkD6Ko2xfHFz6QU'
+        groups: cicd_tester
+        file: app/build/outputs/apk/debug/app-debug.apk
+
+#     It is save build file in artifacts.zip in Github Summery under Action
+#    - name: Upload AAR files
+#      if: always()
+#      uses: actions/upload-artifact@v2
+#      with:
+#          name: artifacts.zip
+#          path: |
+#            app/build/outputs/apk/debug/app-debug.apk
