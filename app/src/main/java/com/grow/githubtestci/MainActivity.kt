@@ -41,10 +41,10 @@ class MainActivity : AppCompatActivity() {
             }
         } else {
             if (type == 1) {
-                Toast.makeText(this@MainActivity, "Text is : $mText", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@MainActivity, "Your Name is : $mText", Toast.LENGTH_SHORT).show()
             } else {
                 AlertDialog.Builder(this)
-                    .setTitle("Text is")
+                    .setTitle("Your Name is")
                     .setMessage(mText)
                     .setCancelable(false)
                     .setPositiveButton(getString(R.string.close)) { dialog, _ ->
