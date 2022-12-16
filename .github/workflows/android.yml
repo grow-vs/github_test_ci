@@ -1,4 +1,4 @@
-name: Android CI
+name: Build and Upload app to Firebase App Distribution(CI-CD)
 
 on:
   push:
@@ -26,12 +26,15 @@ jobs:
     - name: Build with Gradle
       run: ./gradlew build
 
-    - name: Generate AAR and APK files
-      if: always()
+    - name: Generate APK file
+#      Means if above task is status is success or not still this task will perform
+#      if: always()
       run: ./gradlew assembleDebug
 
     - name: Upload apk file to Firebase App Distributor
-      if: always()
+#      Means if above task is status is success or not still this task will perform
+#      if: always()
+#     'uses:' is like dependency in build.gradle : it is integrate third party library and 'with:' is like we need this params for initialize libs.
       uses: wzieba/Firebase-Distribution-Github-Action@v1
       with:
         appId: ${{secrets.FIREBASE_APP_ID}}

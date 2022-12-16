@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(mBinding.root)
 
         initView()
-        setClickEvent()
+        setClickEvent(
     }
 
     private fun initView() {
