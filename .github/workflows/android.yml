@@ -26,13 +26,13 @@ jobs:
       - name: Build with Gradle
         run: ./gradlew build
 
-      - name: Get Application version name
-        run: ./gradlew -q printVersionName
-        id: versionName
-
-      - name: Get Application version Code
-        run: ./gradlew -q printVersionCode
-        id: versionCode
+#      - name: Get Application version name
+#        run: ./gradlew -q printVersionName
+#        id: versionName
+#
+#      - name: Get Application version Code
+#        run: ./gradlew -q printVersionCode
+#        id: versionCode
 
       - name: Generate APK file
         #      Means if above task is status is success or not still this task will perform
