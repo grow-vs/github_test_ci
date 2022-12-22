@@ -39,6 +39,8 @@ class MainActivity : AppCompatActivity() {
                 error = "Enter text"
                 requestFocus()
             }
+
+
         } else {
             if (type == 1) {
                 Toast.makeText(this@MainActivity, "Your Name is : $mText", Toast.LENGTH_SHORT).show()
